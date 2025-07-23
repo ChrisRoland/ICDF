@@ -73,7 +73,7 @@ export function useCardForm() {
     } else {
       const month = parseInt(formData.value.expMonth)
       if (month < 1 || month > 12) {
-        newErrors.expMonth = "Must be 01-12"
+        newErrors.expMonth = "Enter a valid date"
         isValid = false
       }
     }
