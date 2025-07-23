@@ -1,0 +1,25 @@
+<template>
+  <div class="relative w-72 h-40 lg:w-80 lg:h-48">
+    <!-- Card background image -->
+    <div 
+      class="absolute inset-0 rounded-lg shadow-2xl overflow-hidden bg-[url('/src/assets/images/bg-card-back.png')] bg-cover bg-center">
+      <!-- CVC overlay -->
+      <div class="relative w-full h-full">
+        <!-- CVC positioned on the signature strip area -->
+        <div class="absolute top-1/2 right-8 lg:right-12 transform -translate-y-1/2">
+          <div class="bg-white px-3 py-1 rounded text-xs lg:text-sm font-mono text-gray-800 min-w-[3rem] text-center">
+            {{ cvc }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+interface Props {
+  cvc: string
+}
+
+defineProps<Props>()
+</script>
