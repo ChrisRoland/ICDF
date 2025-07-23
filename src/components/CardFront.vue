@@ -1,11 +1,10 @@
 <template>
-  <div class="relative w-72 h-40 lg:w-80 lg:h-48">
+  <div class="relative w-80 h-40 lg:w-[26rem] lg:h-[14rem]">
     <!-- Card background image -->
     <div 
       class="absolute inset-0 rounded-lg shadow-2xl overflow-hidden bg-[url('/src/assets/images/bg-card-front.png')] bg-cover bg-center">
       <!-- Card content overlay -->
       <div class="relative w-full h-full p-4 lg:p-6 text-white">
-        <!-- Logo in top left -->
         <div class="absolute top-4 lg:top-6 left-4 lg:left-6">
           <img 
             src="/card-logo.svg" 
