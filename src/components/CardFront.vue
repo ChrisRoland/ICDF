@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-80 h-40 lg:w-[26rem] lg:h-[14rem]">
+  <div class="relative w-[18rem] h-40 lg:w-[26rem] lg:h-[14rem]">
     <!-- Card background image -->
     <div 
       class="absolute inset-0 rounded-lg shadow-2xl overflow-hidden bg-[url('/src/assets/images/bg-card-front.png')] bg-cover bg-center">
@@ -9,12 +9,12 @@
           <img 
             src="/card-logo.svg" 
             alt="Card Logo" 
-            class="w-16 h-8 lg:w-20 lg:h-10"
+            class="w-14 h-8 lg:w-[4.5rem] lg:h-10"
           />
         </div>
         
         <!-- Card number -->
-        <div class="absolute bottom-16 lg:bottom-20 left-4 lg:left-6 right-4 lg:right-6">
+        <div class="absolute bottom-12 lg:bottom-20 left-4 lg:left-6 right-4 lg:right-6">
           <div class="text-lg lg:text-xl font-mono tracking-wider">
             {{ cardNumber }}
           </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-72 h-40 lg:w-[26rem] lg:h-[14rem]">
+  <div class="relative w-[18rem] h-40 lg:w-[26rem] lg:h-[14rem]">
     <!-- Card background image -->
     <div 
       class="absolute inset-0 rounded-lg shadow-2xl overflow-hidden bg-[url('/src/assets/images/bg-card-back.png')] bg-cover bg-center">
