@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen lg:flex">
     <!-- Left Section - Cards Display -->
-    <div class="bg-[url('/src/assets/images/bg-main-desktop.png')] bg-cover bg-center lg:w-1/3 relative p-6 lg:p-12">
+    <div class="bg-[url('/src/assets/images/bg-main-mobile.png')] h-[220px] lg:h-auto lg:bg-[url('/src/assets/images/bg-main-desktop.png')] bg-cover bg-center lg:w-1/3 relative py-6 px-4 lg:p-12">
       <CardsDisplay 
         :card-number="displayCardNumber"
         :cardholder-name="displayCardholderName"
@@ -10,11 +10,12 @@
       />
     </div>
 
-    <!-- Right Section - Form or Success -->
-    <div class="lg:w-2/3 flex items-center justify-center p-6 lg:p-12 bg-gray-100">
+    <!-- Right Section - Form & Success -->
+    <div class="lg:w-2/3 flex items-center justify-center py-6 px-4 lg:p-12 lg:bg-gray-100">
       <div class="w-full max-w-md">
         <!-- Form State -->
         <CardForm
+        class="mt-16 lg:mt-0"
           v-if="!isCompleted"
           :form-data="formData"
           :errors="errors"

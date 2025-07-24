@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center mt-20 lg:mt-auto">
     <!-- Success Icon -->
     <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8">
           <img 
